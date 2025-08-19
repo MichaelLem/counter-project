@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">The Counter App</h1>
+    </header>
+    <main>
+      <h2>
+        Current Count:
+        <span id="count" aria-live="polite">0</span>
+      </h2>
+      <button id="increment-btn" type="button">
+        <span style="font-size: 1.5rem">+</span>
+      </button>
+      <button id="save-btn" type="button">Save</button>
+      <button id="reset-btn" type="button">Reset Count</button>
+      <button id="restart-btn" type="button">Clear All</button>
+      <p id="saved-display">
+        SAVED: <span id="saved-count" aria-live="polite">0</span>
+      </p>
+    </main>
+  </body>
+</html>

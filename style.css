@@ -1,0 +1,84 @@
+html {
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.9),
+    rgb(0, 0, 0)
+  );
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#saved-display {
+  font-size: 2rem;
+  position: static;
+  text-align: center;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  justify-items: center;
+}
+#title {
+  position: absolute;
+  text-align: center;
+  bottom: 700px;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+button {
+  /* border: 0.1px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: crosshair;
+}
+#increment-btn {
+  background: darkred;
+}
+#save-btn {
+  background: darkgreen;
+}
+#reset-btn {
+  background: rgb(150, 0, 0);
+}
+#restart-btn {
+  background: linear-gradient(
+    to right,
+    rgba(0, 100, 0, 0.5),
+    rgba(139, 0, 0, 0.5)
+  );
+}
+button:active {
+  background-color: white;
+}
